@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto&display=swap');
+
+:root {
+    --textDark: #414240;
+    --textLight: #8E9089;
+    --green: #B3D282;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+    background-image: url("Images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Kalam', cursive;
+    color: var(--textDark);
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Kalam', cursive;
+    text-shadow: 0 4px 2px #E5F1D2;
+    color: var(--textDark);
+}
+
+.total-allowance::-webkit-outer-spin-button,
+.total-allowance::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.total-allowance {
+    border: 3px solid #B3D282;
+    background-color: #F3F8EA;
+    border-radius: 15px;
+    height: 50px;
+    width: 230px;
+    outline: none;
+    margin-top: 20px;
+    color: var(--textDark);
+
+    font-size: 20px;
+    padding: 0 15px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    margin-top: 20px;
+    color: var(--textLight);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#duration {
+    border: 3px solid #B3D282;
+    background-color: #F3F8EA;
+    border-radius: 15px;
+    height: 52px;
+    width: 270px;
+    outline: none;
+    margin-top: 8px;
+    color: var(--textDark);
+
+    font-size: 20px;
+    padding: 0 15px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+}
+
+.p-label {
+    margin: 20px 130px 0 0;
+    color: var(--textLight);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.days-of-school {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.row label {
+    color: var(--textDark);
+    cursor: pointer;
+}
+
+.row2 {
+    margin-left: 25px;
+}
+
+.checkboxDay {
+    accent-color: var(--green);
+    border: none;
+    outline: none;
+    background-color: var(--textLight);
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.compute-for {
+    width: 257px;
+}
+
+.compute-for label {
+    color: var(--textDark);
+    cursor: pointer;
+}
+
+.compute-for input {
+    margin: 10px 10px 0 0;
+}
+
+.checkbox {
+    accent-color: var(--green);
+    border: none;
+    outline: none;
+    background-color: var(--textLight);
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.p2-label {
+    margin: 20px 150px 0 0;
+    color: var(--textLight);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.p3-label {
+    margin: 20px 190px 0 0;
+    color: var(--textLight);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 260px;
+    height: 5px;
+    background: #d3d3d3;
+    /* Set the background color of the track */
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background: var(--green);
+    /* Set the color of the slider thumb */
+    cursor: pointer;
+}
+
+.p4-label {
+    margin-top: 10px;
+    text-align: right;
+    color: var(--textLight);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#compute {
+    height: 40px;
+    width: 180px;
+    margin-top: 30px;
+    background-color: var(--green);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all ease-in-out 0.1s;
+}
+
+#compute:hover {
+    background-color: #a6c575;
+}
+
+#duration-status {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 120px;
+}
+
+table {
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px 20px;
+}
+
+th,
+td {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.p5-label {
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    visibility: hidden;
+    color: red;
+}
+
+.p6-label {
+    margin: 20px 0;
+    color: var(--textDark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    visibility: hidden;
+}

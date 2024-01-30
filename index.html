@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScholarlyStash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ScholarlyStash</h1>
+    <h4>Efficient Student Allowance Handling</h4>
+    <input type="number" placeholder="Allowance amount" class="total-allowance" id="total-allowance"/>
+    <label for="duration">Duration <br>
+        <select name="duration" id="duration"> 
+            <option value="0" selected>Weekly</option>
+            <option value="1">Monthly</option>
+        </select>
+    </label>
+    
+    <p class="p-label">Days of School</p>
+   
+    <div class="days-of-school">
+        <div class="row1 row">
+            <label for="monday"> 
+                <input type="checkbox" name="monday" id="monday" class="checkboxDay" value="Monday">Monday
+            </label> <br>
+            <label for="tuesday"> 
+                <input type="checkbox" name="tuesday" id="tuesday" class="checkboxDay" value="Tuesday">Tuesday
+            </label><br> 
+            <label for="wednesday"> 
+                <input type="checkbox" name="wednesday" id="wednesday" class="checkboxDay" value="Wednesday">Wednesday
+            </label>
+        </div>
+
+        <div class="row2 row">
+            <label for="thursday"> 
+                <input type="checkbox" name="thursday" id="thursday" class="checkboxDay" value="Thursday">Thursday
+            </label><br>
+            <label for="friday"> 
+                <input type="checkbox" name="friday" id="friday" class="checkboxDay" value="Friday">Friday
+            </label><br>
+            <label for="saturday"> 
+                <input type="checkbox" name="saturday" id="saturday" class="checkboxDay" value="Saturday">Saturday
+            </label>
+        </div>
+    </div>
+
+    <p class="p2-label">Compute for</p>
+    <div class="compute-for">
+        <label for="food"> 
+            <input type="checkbox" name="food" id="food" class="checkbox" value="Food">Food
+        </label><br>
+        <label for="transportation"> 
+            <input type="checkbox" name="transportation" id="transportation" class="checkbox" value="Transportation">Transportation
+        </label><br>
+        <label for="miscellaneous"> 
+            <input type="checkbox" name="miscellaneous" id="miscellaneous" class="checkbox" value="Miscellaneous">Miscellaneous
+        </label><br>
+        <label for="mobile data"> 
+            <input type="checkbox" name="mobile data" id="mobile data" class="checkbox" value="Mobile data">Mobile data
+        </label><br>
+    </div>
+
+    <p class="p3-label">Savings</p>
+    <div class="range-container">
+        <input type="range" id="range" min="0" max="25" step="5" value="0">
+        <p class="p4-label" id="p4-label" >0</p>
+    </div>
+
+    <button id="compute">Calculate</button>
+    
+    <h3 id="duration-status"></h3>
+    <p class="p5-label" id="budget">Low budget</p>
+    <p class="p6-label" id="daily"></p>
+    <table id="table">
+        <!-- <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>mehehe</td>
+            <td>mehehe</td>
+            <td>mehehe</td>
+        </tr> -->
+    </table>
+
+</body>
+<script src="main.js"></script>
+</html>
